@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-05T16:08:56 IST" name="Default suite" finished-at="2024-09-05T16:09:24 IST" duration-ms="27938">
+    <groups>
+    </groups>
+    <test started-at="2024-09-05T16:08:56 IST" name="Default test" finished-at="2024-09-05T16:09:24 IST" duration-ms="27938">
+      <class name="FBtest.TestMethods_GoogleSearch">
+        <test-method is-config="true" signature="beforetest()[pri:0, instance:FBtest.TestMethods_GoogleSearch@2892d68]" started-at="2024-09-05T16:08:57 IST" name="beforetest" finished-at="2024-09-05T16:09:24 IST" duration-ms="26862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method signature="SearchOperation()[pri:0, instance:FBtest.TestMethods_GoogleSearch@2892d68]" started-at="2024-09-05T16:09:24 IST" name="SearchOperation" finished-at="2024-09-05T16:09:24 IST" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchOperation -->
+        <test-method signature="Facebook()[pri:1, instance:FBtest.TestMethods_GoogleSearch@2892d68]" started-at="2024-09-05T16:09:24 IST" name="Facebook" finished-at="2024-09-05T16:09:24 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Facebook -->
+        <test-method signature="VerifyLoginfunctionality()[pri:2, instance:FBtest.TestMethods_GoogleSearch@2892d68]" started-at="2024-09-05T16:09:24 IST" name="VerifyLoginfunctionality" finished-at="2024-09-05T16:09:24 IST" duration-ms="126" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+at FBproject.Facebookpage.EnterUsername(Facebookpage.java:36)
+at FBtest.TestMethods_GoogleSearch.VerifyLoginfunctionality(TestMethods_GoogleSearch.java:72)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoginfunctionality -->
+        <test-method is-config="true" signature="aftertest()[pri:0, instance:FBtest.TestMethods_GoogleSearch@2892d68]" started-at="2024-09-05T16:09:24 IST" name="aftertest" finished-at="2024-09-05T16:09:24 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftertest -->
+      </class> <!-- FBtest.TestMethods_GoogleSearch -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
